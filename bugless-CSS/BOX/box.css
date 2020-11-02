@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.Box {
+  width: 480px;
+  height: 480px;
+  color: white;
+  background-color: blue;
+  padding-top: 40px;
+  padding-left: 50px;
+  /* box-sizing: border-box;  */
+}
