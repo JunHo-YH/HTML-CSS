@@ -19,20 +19,13 @@ a {
 
 /* ▼ WHERE YOUR CODE BEGINS */
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
 .tab-menu {
   max-width: 540px;
-  border-bottom: 1px solid white;
+  padding-left: 0;
+  list-style-type: none;
+  border-bottom: 1px solid beige;
   background-color: white;
 }
-
-/* .tab-menu {
-  overflow: hidden;
-} */
 
 .tab-menu::after {
   content: "";
@@ -42,16 +35,23 @@ ul {
 
 .tab-menu-item {
   float: left;
+  /* padding: 16px 20px; */
   margin-right: 16px;
+  /* border: 1px solid black; */
 }
 
 .tab-menu-item a {
-  padding: 16px 20px;
   display: block;
+  padding: 16px 20px;
+  /* a태그에 padding을 해주면 클릭할 수 있는 범위가 늘어난다.
+   --> 사용성 증가! */
+}
+
+.tab-menu-item.selected {
+  border-bottom: 2px solid #2860e1;
 }
 
 .tab-menu-item.selected a {
-  color: blue;
+  color: #2860e1;
   font-weight: 500;
-  border-bottom: 2px solid blue;
 }
