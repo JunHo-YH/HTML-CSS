@@ -3,3 +3,157 @@
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.card {
+  display: flex;
+  width: 840px;
+  padding: 24px;
+}
+
+.card-image {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  margin-right: 24px;
+  background-color: #000;
+  background-image: url("./assets/img-house.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.card-image .like-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  background-image: url("./assets/icon-favorite.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.card-image.vertical img {
+  width: 100%;
+  height: auto;
+}
+
+.card-image.horizontal img {
+  width: auto;
+  height: 100%;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 9px;
+}
+
+.plus-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  margin-right: 6px;
+  border-radius: 4px;
+  width: 48px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.428571428571429;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #92174d;
+}
+
+.property-type span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7d858f;
+}
+
+.property-rate {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.property-rate strong {
+  color: #151b26;
+  font-weight: 400;
+}
+
+.property-rate span {
+  color: #7d858f;
+}
+
+.property-rate::before {
+  content: "";
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("./assets/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center cetner;
+  background-size: contain;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #151b26;
+  margin-bottom: 16px;
+}
+
+.property-detail {
+  font-size: 14px;
+  line-height: 1.142857142857143;
+  color: #7d858f;
+}
+
+.property-detail dd span::after {
+  content: ".";
+  margin: 0 8px;
+  /* 가상요소는 inline요소라서 margin-top/bottom을 줄 수 없지만
+  left/right는 가능하기 때문에 이렇게 사용할 수 있다. */
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.property-detail div:first-child {
+  margin-bottom: 8px;
+}
