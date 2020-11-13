@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cancel-button {
+  width: 162px;
+  height: 56px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 100px;
+  background-color: #ff4949;
+  /* typography */
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #fff;
+  transition: box-shadow 250ms ease-in;
+  /* shadow */
+  /* 스프레드 값을 넣는 것을 디자이너 분들이 좋아하지 않아서 보통 0을 넣는다. */
+}
+.cancel-button:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
+}
+
+.confirm-button {
+  width: 162px;
+  height: 56px;
+  border: none;
+  border-radius: 100px;
+  background-color: #13ce66;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #fff;
+  transition: box-shadow 250ms ease-in;
+  /* shadow */
+}
+
+.confirm-button:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 16px 0 rgba(19, 206, 102, 0.35);
+}
